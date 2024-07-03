@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use("/api/my/user/", MyUserRoute);
+app.use("/api/my/user", MyUserRoute);
 
 app.listen(PORT, () =>{
     console.log(`Server running on port ${PORT}`);
